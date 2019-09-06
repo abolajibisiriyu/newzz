@@ -51,7 +51,7 @@ const Newzz = {
   utils: {},
 
   // api
-  baseURL: "http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news",
+  baseURL: "https://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news",
   async fetchNews(page = 1, limit = 10) {
     const res = await fetch(`${this.baseURL}?page=${page}&limit=${limit}`);
     return await res.json();
